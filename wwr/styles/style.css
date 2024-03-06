@@ -488,3 +488,37 @@ main section img {
        margin-top: 25px;
    }
 }
+.header-container {
+  position: relative;
+}
+
+.header-container img {
+  width: 100%;
+  display: block;
+}
+
+.header-container h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding: 10px 20px;
+  margin: 0; /* Remove default margin */
+  font-family: 'Rubik Burned', sans-serif; /* Rubik Burned font */
+}
+
+.rivers-grid {
+  display: block; /* Use block layout */
+}
+
+.rivers-grid > * {
+  margin-bottom: 20px; /* Add space between elements */
+}
+
+.rivers-grid ul {
+  list-style-type: none;
+  padding-left: 0; /* Removes default left padding */
+}
