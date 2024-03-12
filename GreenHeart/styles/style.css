@@ -1,0 +1,35 @@
+header {
+    background-color: #F7AF9D;
+    display: grid;
+    grid-template-columns: 150px auto;
+  }
+  
+  nav a {
+    color: #4BB3FD;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #646165;
+    color: #9FAF90;
+  }
+  
+  footer {
+    background-color: #F7AF9D;
+    padding: 25px 50px;
+    margin-top: 200px;
+  }
+  
+  footer a {
+    color: #4BB3FD;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #646165;
+  }
+  
+  footer p {
+    font-size: 1.2em;
+  }
+  
