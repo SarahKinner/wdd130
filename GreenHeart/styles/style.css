@@ -1,4 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Pixelify+Sans&display=swap');
+
+
+
 
 /* Header Styles */
 header {
@@ -14,14 +18,23 @@ justify-self: center;
 align-self: center;
 }
 
+
+
+
 .logo {
 width: 80px;
 }
+
+
+
 
 nav {
 display: flex;
 justify-content: space-around;
 }
+
+
+
 
 nav a {
 text-align: center;
@@ -31,10 +44,50 @@ padding: 35px;
 font-size: 30px;
 }
 
+
+
+
 nav a:hover {
 background-color: #b20d30; /* Background color when hovering */
 color: #000; /* Text color when hovering */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -53,6 +106,9 @@ text-align: center; /* Center-align the text */
 padding-top: 50px; /* Add padding to the top */
 }
 
+
+
+
 #welcome-section h1 {
 font-family: 'Pixelify Sans', sans-serif; /* Use Pixelify Sans for headings */
 /* Position the heading absolutely at the top center */
@@ -65,10 +121,16 @@ color: #0a6004;
 font-size: 50px;
 }
 
+
+
+
 #welcome-section img:first-child {
 position: relative;
 z-index: 0;
 }
+
+
+
 
 #welcome-section img {
 display: block;
@@ -83,23 +145,37 @@ bottom: 0;
 z-index: -1;
 }
 
-/* Overlay Box Styles */
-#overlay-box {
-position: absolute;
-top: 64.5%; /* Adjust as needed */
-left: 78%; /* Adjust as needed */
+
+
+
+#welcome-section p {
+background-color: rgba(255, 255, 200, 0.5); /* Yellow background with transparency */
+padding: 20px; /* Add padding */
+color: #333; /* Adjust the text color as needed */
+font-size: 25px; /* Adjust the font size as needed */
+line-height: 1.5;
+width: 40%; /* Adjust the width of the paragraph */
+text-align: center; /* Center-align the text */
+position: absolute; /* Position the paragraph absolutely */
+top: 50%; /* Adjust as needed */
+left: 50%; /* Adjust as needed */
 transform: translate(-50%, -50%);
-background-color: rgba(255, 255, 200, 0.5); /* Semi-transparent white */
-width: 600px; /* Adjust width as needed */
-height: 400px; /* Adjust height as needed */
-z-index: 1; /* Ensure the box is above the second image */
+z-index: 2;
 }
 
+
+
+
+#welcome-section p{
+grid-column: 2/3;
+grid-row: 1/2;
+margin-top: 100px;
+}
 /* Move the paragraph to appear within the overlay box */
 #welcome-section p {
 position: absolute;
-top: 65%; /* Adjust as needed */
-left: 78%; /* Adjust as needed */
+top: 63.5%; /* Adjust as needed */
+left: 76%; /* Adjust as needed */
 transform: translate(-50%, -50%);
 color: #333; /* Adjust the text color as needed */
 font-size: 25px; /* Adjust the font size as needed */
@@ -108,6 +184,9 @@ width: 40%; /* Adjust the width of the paragraph */
 text-align: center; /* Center-align the text */
 z-index: 2;
 }
+
+
+
 
 #welcome-section a {
 position: absolute;
@@ -128,11 +207,17 @@ z-index: 2; /* Ensure button appears above the overlay box */
 font-family: 'Overpass', sans-serif;
 }
 
+
+
+
 /* Change button color on hover */
 #welcome-section a:hover {
 background-color: #b20d30; /* Background color when hovering */
 color: #000; /* Text color when hovering */
 }
+
+
+
 
 /* Additional Styles */
 body {
@@ -140,10 +225,97 @@ background-color: #0c6e05;
 position: relative; /* Set body to relative positioning */
 }
 
+
+
+
 /* For paragraphs */
 p {
 font-family: 'Overpass', Helvetica, sans-serif; /* Use Overpass for paragraphs */
 }
+
+
+
+
+/* Adjust the styles for the paragraph within the welcome-section */
+#welcome-section {
+position: relative;
+text-align: center;
+padding-top: 50px;
+}
+
+
+
+
+#welcome-section p {
+background-color: rgba(255, 255, 200, 0.5);
+padding: 20px;
+color: #333;
+font-size: 2vw; /* Use vw (viewport width) for font size */
+width: 50%; /* Use percentage width */
+max-width: 600px; /* Set a maximum width */
+position: absolute;
+top: 60.5%;
+left: 76%;
+transform: translate(-50%, -50%);
+z-index: 2;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+#welcome-section p {
+  font-size: 3vw; /* Adjust font size for smaller screens */
+  width: 50%; /* Adjust width for smaller screens */
+}
+#welcome-section h1 {
+ font-size: 5vw; /* Adjust font size for smaller screens */
+}
+}
+
+
+/* Adjust the styles for the paragraph within the welcome-section */
+#welcome-section p {
+ background-color: rgba(255, 255, 200, 0.5);
+ padding: 20px; /* Keep a fixed padding */
+ color: #333;
+ font-size: 2vw; /* Use viewport width for font size */
+ width: 50%; /* Fill up the grid container */
+ max-width: 600px; /* Limit the width to 80% of the grid container */
+ position: absolute; /* Keep position absolute */
+ top: 60.5%;
+ left: 76%;
+ transform: translate(-50%, -50%);
+ z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -157,49 +329,97 @@ font-family: 'Overpass', Helvetica, sans-serif; /* Use Overpass for paragraphs *
 
 /* Story Description Styles */
 #story-description {
- display: flex;
- flex-direction: column;
- align-items: center; /* Align items (header and subhead) vertically */
- text-align: center; /* Center-align text within the container */
- padding-top: 50px; /* Add additional padding if needed */
+display: flex;
+flex-direction: column;
+align-items: center; /* Align items (header and subhead) vertically */
+text-align: center; /* Center-align text within the container */
+padding-top: 50px; /* Add additional padding if needed */
 }
+
+
+
 
 #story-description h2 {
-  /* Styles for the main heading "Story Description" */
-  font-size: 50px;
-  font-weight: bold;
-  font-family: 'Pixelify Sans', sans-serif;
-  margin-bottom: 50px;
-  color: #0a6004;
-  /* Add any other styles as needed */
+/* Styles for the main heading "Story Description" */
+font-size: 50px;
+font-weight: bold;
+font-family: 'Pixelify Sans', sans-serif;
+margin-bottom: 50px;
+color: #0a6004;
+/* Add any other styles as needed */
 }
+
+
+
 
 #story-description h3 {
- font-size: 30px;
- margin-bottom: 25px; /* Add spacing between header and subhead */
- margin-top: 25px;
- font-family: 'Pixelify Sans', sans-serif;
- color: #0a6004;
+font-size: 30px;
+margin-bottom: 25px; /* Add spacing between header and subhead */
+margin-top: 25px;
+font-family: 'Pixelify Sans', sans-serif;
+color: #0a6004;
 }
+
+
+
 
 #story-description p {
- font-size: 20px;
- font-family: 'Overpass', sans-serif;
- padding-left: 30px;
- padding-right: 30px;
- padding-bottom: 30px;
+font-size: 20px;
+font-family: 'Overpass', sans-serif;
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 30px;
 }
+
+
+
 
 body.child-page {
-  background-color: #CD8987 /* Change "yourDesiredColor" to the color you want */
+background-color: #CD8987 /* Change "yourDesiredColor" to the color you want */
 }
 
+
+
+
 #story-description img {
- max-width: 95%;
- height: auto;
- display: block;
- margin: 0 auto;
+max-width: 95%;
+height: auto;
+display: block;
+margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -221,15 +441,24 @@ justify-content: space-between; /* Distribute items evenly along the main axis *
 align-items: center; /* Center items vertically */
 }
 
+
+
+
 footer a {
 color: #b20d30;
 text-decoration: none;
 }
 
+
+
+
 footer a:hover {
 color: rgb(0, 72, 255);
 text-decoration: underline;
 }
+
+
+
 
 * {
 margin: 0;
@@ -247,62 +476,79 @@ box-sizing: border-box;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Story Description Styles */
 #character-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Align items (header and subhead) vertically */
-  text-align: center; /* Center-align text within the container */
-  padding-top: 50px; /* Add additional padding if needed */
- }
- 
- #character-info h2 {
-   /* Styles for the main heading "Story Description" */
-   font-size: 50px;
-   font-weight: bold;
-   font-family: 'Pixelify Sans', sans-serif;
-   margin-bottom: 50px;
-   color: #0a6004;
-   /* Add any other styles as needed */
- }
- 
- #character-info h3 {
-  font-size: 30px;
-  margin-bottom: 25px; /* Add spacing between header and subhead */
-  margin-top: 25px;
-  font-family: 'Pixelify Sans', sans-serif;
-  color: #0a6004;
- }
- 
- #character-info p {
-  font-size: 20px;
-  font-family: 'Overpass', sans-serif;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
- }
- 
- body.child-page2 {
-   background-color: #B199FF /* Change "yourDesiredColor" to the color you want */
- }
- 
- #character-info img {
-  max-width: 95%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
- }
-
- 
-
- 
- 
- 
- 
-
-
-
-
+display: flex;
+flex-direction: column;
+align-items: center; /* Align items (header and subhead) vertically */
+text-align: center; /* Center-align text within the container */
+padding-top: 50px; /* Add additional padding if needed */
+}
+#character-info h2 {
+ /* Styles for the main heading "Story Description" */
+ font-size: 50px;
+ font-weight: bold;
+ font-family: 'Pixelify Sans', sans-serif;
+ margin-bottom: 50px;
+ color: #0a6004;
+ /* Add any other styles as needed */
+}
+#character-info h3 {
+font-size: 30px;
+margin-bottom: 25px; /* Add spacing between header and subhead */
+margin-top: 25px;
+font-family: 'Pixelify Sans', sans-serif;
+color: #0a6004;
+}
+#character-info p {
+font-size: 20px;
+font-family: 'Overpass', sans-serif;
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 30px;
+}
+body.child-page2 {
+ background-color: #B199FF /* Change "yourDesiredColor" to the color you want */
+}
+#character-info img {
+max-width: 95%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
 
 
 
