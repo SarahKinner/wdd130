@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Pixelify+Sans&display=swap');
 
-
-
-
-
-
 /* Header Styles */
 header {
 background-color: #93a8ac;
@@ -13,49 +8,20 @@ grid-template-columns: 150px auto;
 padding: 0;
 font-family: 'Overpass', Helvetica, sans-serif;
 }
-
-
-
-
-
-
-
-
 #logo_link {
 padding-top: 5px;
 justify-self: center;
 align-self: center;
 }
 
-
-
-
-
-
-
-
 .logo {
 width: 80px;
 }
-
-
-
-
-
-
-
 
 nav {
 display: flex;
 justify-content: space-around;
 }
-
-
-
-
-
-
-
 
 nav a {
 text-align: center;
@@ -64,13 +30,17 @@ text-decoration: none;
 padding: 35px;
 }
 
-
-
-
 nav a:hover {
 background-color: #b20d30; /* Background color when hovering */
 color: #000; /* Text color when hovering */
 }
+
+
+
+
+
+
+
 
 
 
@@ -81,13 +51,6 @@ position: relative;
 text-align: center; /* Center-align the text */
 padding-top: 50px; /* Add padding to the top */
 }
-
-
-
-
-
-
-
 
 #welcome-section h1 {
 font-family: 'Pixelify Sans', sans-serif; /* Use Pixelify Sans for headings */
@@ -101,24 +64,10 @@ color: #0a6004;
 font-size: 50px;
 }
 
-
-
-
-
-
-
-
 #welcome-section img:first-child {
 position: relative;
 z-index: 0;
 }
-
-
-
-
-
-
-
 
 #welcome-section img {
 display: block;
@@ -133,11 +82,6 @@ bottom: 0;
 z-index: -1;
 }
 
-
-
-
-
-
 /* Overlay Box Styles */
 #overlay-box {
 position: absolute;
@@ -149,13 +93,6 @@ width: 600px; /* Adjust width as needed */
 height: 400px; /* Adjust height as needed */
 z-index: 1; /* Ensure the box is above the second image */
 }
-
-
-
-
-
-
-
 
 /* Move the paragraph to appear within the overlay box */
 #welcome-section p {
@@ -170,13 +107,6 @@ width: 40%; /* Adjust the width of the paragraph */
 text-align: center; /* Center-align the text */
 z-index: 2;
 }
-
-
-
-
-
-
-
 
 #welcome-section a {
 position: absolute;
@@ -197,17 +127,11 @@ z-index: 2; /* Ensure button appears above the overlay box */
 font-family: 'Overpass', sans-serif;
 }
 
-
-
-
 /* Change button color on hover */
 #welcome-section a:hover {
 background-color: #b20d30; /* Background color when hovering */
 color: #000; /* Text color when hovering */
 }
-
-
-
 
 /* Additional Styles */
 body {
@@ -215,17 +139,19 @@ background-color: #0c6e05;
 position: relative; /* Set body to relative positioning */
 }
 
-
-
-
-
-
-
-
 /* For paragraphs */
 p {
 font-family: 'Overpass', Helvetica, sans-serif; /* Use Overpass for paragraphs */
 }
+
+
+
+
+
+
+
+
+
 
 
 /* Story Description Styles */
@@ -255,7 +181,6 @@ font-family: 'Overpass', Helvetica, sans-serif; /* Use Overpass for paragraphs *
  color: #0a6004;
 }
 
-
 #story-description p {
  font-size: 20px;
  font-family: 'Overpass', sans-serif;
@@ -276,6 +201,15 @@ body.child-page {
 }
 
 
+
+
+
+
+
+
+
+
+
 /* Footer Styles */
 footer {
 background-color: #93a8ac;
@@ -286,32 +220,15 @@ justify-content: space-between; /* Distribute items evenly along the main axis *
 align-items: center; /* Center items vertically */
 }
 
-
-
-
-
-
-
-
 footer a {
 color: #b20d30;
 text-decoration: none;
 }
 
-
-
-
-
-
-
-
 footer a:hover {
 color: rgb(0, 72, 255);
 text-decoration: underline;
 }
-
-
-
 
 * {
 margin: 0;
@@ -320,6 +237,67 @@ box-sizing: border-box;
 }
 
 
+
+
+
+
+
+
+
+
+
+/* Story Description Styles */
+#character-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items (header and subhead) vertically */
+  text-align: center; /* Center-align text within the container */
+  padding-top: 50px; /* Add additional padding if needed */
+ }
+ 
+ #character-info h2 {
+   /* Styles for the main heading "Story Description" */
+   font-size: 50px;
+   font-weight: bold;
+   font-family: 'Pixelify Sans', sans-serif;
+   margin-bottom: 50px;
+   color: #0a6004;
+   /* Add any other styles as needed */
+ }
+ 
+ #character-info h3 {
+  font-size: 30px;
+  margin-bottom: 25px; /* Add spacing between header and subhead */
+  margin-top: 25px;
+  font-family: 'Pixelify Sans', sans-serif;
+  color: #0a6004;
+ }
+ 
+ #character-info p {
+  font-size: 20px;
+  font-family: 'Overpass', sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+ }
+ 
+ body.child-page2 {
+   background-color: #B199FF /* Change "yourDesiredColor" to the color you want */
+ }
+ 
+ #character-info img {
+  max-width: 95%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+ }
+
+ 
+
+ 
+ 
+ 
+ 
 
 
 
