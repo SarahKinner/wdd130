@@ -28,6 +28,7 @@ text-align: center;
 color: #b20d30;
 text-decoration: none;
 padding: 35px;
+font-size: 30px;
 }
 
 nav a:hover {
@@ -72,7 +73,7 @@ z-index: 0;
 #welcome-section img {
 display: block;
 margin: 0 auto 100px;
-max-width: 100%;
+max-width: 95%;
 height: auto;
 position: relative;
 top: 0;
